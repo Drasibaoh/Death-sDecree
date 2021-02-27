@@ -31,10 +31,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (end)
-        {
-            SceneManager.LoadScene(1);
-        }
+
     }
     public void NextJudgementHeaven()
     {
