@@ -8,7 +8,7 @@ public class TitleScript : MonoBehaviour
     public GameObject optionCanvas;
     public GameObject normalCanvas;
     public GameObject comandeCanvas;
-    //public AudioMixer mixer;
+    public AudioMixer mixer;
 
     void Start()
     {
@@ -44,8 +44,8 @@ public class TitleScript : MonoBehaviour
         comandeCanvas.SetActive(false);
         optionCanvas.SetActive(true);
     }
-   /* public void SetVolume(float sliderValue)
+    public void SetVolume(float sliderValue)
     {
         mixer.SetFloat("MusicVolume",Mathf.Log10( sliderValue)*20);
-    }*/
+    }
 }
