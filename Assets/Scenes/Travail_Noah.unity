@@ -1684,11 +1684,10 @@ MonoBehaviour:
     beaucoup"
   - Combien ?
   - "30 Millions\u2026 Sans compter mon salaire de 2 millions par mois."
-  - "Ha oui\u2026QUAND M\xCAME. Et comment avez-vous faites ?"
+  - "Ha oui\u2026QUAND M\xCAME. Et comment avez-vous fait ?"
   - "Vous savez que les dons sont d\xE9ductibles des imp\xF4ts ?"
   - "S\xE9rieux ?"
-  - "Alors j\u2019ai donn\xE9 les 30 millions \xE0 des assos. Tous les mois une diff\xE9rente.Alors
-    j\u2019ai donn\xE9 les 30 millions \xE0 des assos. Tous les mois une diff\xE9rente."
+  - "Alors j\u2019ai donn\xE9 les 30 millions \xE0 des assos. Tous les mois une diff\xE9rente."
   - "C\u2019est plut\xF4t gentil."
   - "C\u2019\xE9tait surtout dans mon int\xE9r\xEAt mais oui \xE9coutez c\u2019\xE9tait
     b\xE9nef pour le deux donc bon si vous voulez\u2026"
@@ -2085,7 +2084,7 @@ MonoBehaviour:
   - "Ok j\u2019ai un peu peur, je crois que j\u2019ai d\xE9j\xE0 mang\xE9 chez vous
     une fois."
   - Ah bon ! Et qu'avez vous pensez de ma cuisine ?
-  - "Les plats \xE9taient excellents, mais vous empoisonn\xE9 souvant vos plats ?"
+  - "Les plats \xE9taient excellents, mais vous empoisonnez souvant vos plats ?"
   - "Roh, vous inqui\xE9tez pas, si vous \xEAtes mort de la cuisine de mon restaurant,
     \xE7a aurait \xE9t\xE9 la faute d\u2019un de mes sous-chefs, ces incapables !"
   - "Attendez, vous \xEAtes en train de me dire que c\u2019\xE9taient les sous-chefs
@@ -2124,7 +2123,7 @@ MonoBehaviour:
   - "Le truc c\u2019est qu\u2019on sait que Totskyev aime ne pas avoir de plat pour
     lui et manger dans assiettes des autres."
   - "Donc on doit pr\xE9parer que des plats qu\u2019il pourrait aimer, alors j\u2019ai
-    fait en sort d\u2019empoisonner tous les plats au cas o\xF9."
+    fait en sorte d\u2019empoisonner tous les plats au cas o\xF9."
   - "Et \xE7a a march\xE9 ?"
   - "Ouais, le salaud a beaucoup trop mang\xE9."
   - ...
@@ -4459,8 +4458,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: -73}
-  m_SizeDelta: {x: 147.72252, y: 226.64832}
+  m_AnchoredPosition: {x: 13.2, y: -52.2}
+  m_SizeDelta: {x: 231.7397, y: 288.26096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922810414
 MonoBehaviour:

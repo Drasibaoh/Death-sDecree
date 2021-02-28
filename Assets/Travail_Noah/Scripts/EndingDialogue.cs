@@ -37,7 +37,7 @@ public class EndingDialogue : MonoBehaviour
             if (current > dialoguesP1.Count - 1)
             {
                 outro.SetActive(false);
-                Application.Quit();
+                SceneManager.LoadScene(2);
             }
             else
             {

@@ -45,4 +45,12 @@ public class TitleScript : MonoBehaviour
         comandeCanvas.SetActive(false);
         optionCanvas.SetActive(true);
     }
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void Credit()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
