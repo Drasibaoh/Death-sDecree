@@ -5,26 +5,24 @@ using UnityEngine.UI;
 
 public class ButtonChoices : MonoBehaviour
 {
+    public Sprite Normal; 
+    public Sprite Happy; 
+    public Sprite Sad;
 
-    public Texture Happy;
-    public Texture Sad;
-    public Texture Waiting;
-
-    RawImage m_RawImage;
+    public Image m_Image;
 
     void Start()
     {
-        m_RawImage = GetComponent<RawImage>();
-        m_RawImage.texture = Waiting;
+        m_Image.sprite = Normal;
     }
 
     public void HeavenChoice()
     {
-        m_RawImage.texture = Happy;
+        m_Image.sprite = Happy;
     }
 
     public void HellChoice()
     {
-        m_RawImage.texture = Sad;
+        m_Image.sprite = Sad;
     }
 }
