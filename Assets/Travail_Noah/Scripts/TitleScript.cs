@@ -27,16 +27,19 @@ public class TitleScript : MonoBehaviour
     public void EnterOption()
     {
         optionCanvas.SetActive(true);
-        normalCanvas.SetActive(false);
+        if (normalCanvas != null)
+            normalCanvas.SetActive(false);
     }
     public void ExitOption()
     {
         optionCanvas.SetActive(false);
+        if (normalCanvas!=null)
         normalCanvas.SetActive(true);
     }
     public void EnterComande()
     {
         comandeCanvas.SetActive(true);
+
         optionCanvas.SetActive(false);
     }
     public void ExitComande()
