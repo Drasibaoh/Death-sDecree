@@ -35,6 +35,7 @@ public class Dialogue : MonoBehaviour
         if (current < dialogues.Count)
         {
             current++;
+            Debug.Log(current);
             if (current != 4)
             {
                 Debug.Log("e");
@@ -48,12 +49,10 @@ public class Dialogue : MonoBehaviour
                 }
                 else if (current != 2 && isPlayer[current])
                 {
-                    file.SetActive(false);
                     showPlayer.text = dialogues[current];
                 }
                 else if (current != 2 && !isPlayer[current])
                 {
-                    file.SetActive(false);
                     showOther.text = dialogues[current];
                 }
                 else if (current == 2)
