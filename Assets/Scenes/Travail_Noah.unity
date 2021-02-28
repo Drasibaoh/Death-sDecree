@@ -6475,6 +6475,7 @@ MonoBehaviour:
   firsTime: 1
   end: 1
   choice: {fileID: 1641577461}
+  outro: {fileID: 586191894}
 --- !u!4 &1470449250
 Transform:
   m_ObjectHideFlags: 0
