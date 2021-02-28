@@ -307,7 +307,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 716375635}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -749,7 +749,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 716375635}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -896,7 +896,9 @@ MonoBehaviour:
   showOther: {fileID: 336041118}
   choice: {fileID: 1641577461}
   file: {fileID: 1405889347}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 2397a0e0076bbea4d94b5c3b8a4ba371, type: 3}
 --- !u!114 &136684915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1202,9 @@ MonoBehaviour:
   showOther: {fileID: 744340623}
   choice: {fileID: 1641577461}
   file: {fileID: 731608293}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 1984dc09b14e4f84bb2cdce83f9ce24a, type: 3}
 --- !u!114 &259323516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,6 +1337,10 @@ MonoBehaviour:
   transition: 5
   outro: {fileID: 586191894}
   fade: {fileID: 1155572649}
+  boss: {fileID: 1604381786}
+  holo: {fileID: 21300000, guid: 3ee16a07e7e31a24198f1c6ee1579bc7, type: 3}
+  us: {fileID: 922810414}
+  playerS: {fileID: 21300000, guid: 145c6b50c7c7ae1409df4f28155bc4e4, type: 3}
 --- !u!114 &300231755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1470,7 +1478,9 @@ MonoBehaviour:
   showOther: {fileID: 180976804}
   choice: {fileID: 1641577461}
   file: {fileID: 1660404475}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 8a6cf99283175734288a6c29ffdc3d68, type: 3}
 --- !u!114 &313676243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,10 +1698,12 @@ MonoBehaviour:
   - " \u2026"
   isPlayer: 0101000001000100010001000100000100010001000100010000010001000100010001
   showPlayer: {fileID: 0}
-  showOther: {fileID: 1225382508}
+  showOther: {fileID: 46728014}
   choice: {fileID: 1641577461}
   file: {fileID: 1844592983}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 012992f0c3117bd42927e44ac1987898, type: 3}
 --- !u!114 &332952842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,7 +2136,9 @@ MonoBehaviour:
   showOther: {fileID: 1940927195}
   choice: {fileID: 1641577461}
   file: {fileID: 1688193486}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: fdeef1d3b0d3ece429d45b17e74a0ffd, type: 3}
 --- !u!114 &407137819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,7 +2333,9 @@ MonoBehaviour:
   showOther: {fileID: 535244603}
   choice: {fileID: 1641577461}
   file: {fileID: 1585414639}
+  sprite: {fileID: 0}
   current: 0
+  character: {fileID: 0}
 --- !u!114 &432452901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3408,6 +3424,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 318279650}
+  - {fileID: 1604381785}
   - {fileID: 922810413}
   - {fileID: 103965614}
   - {fileID: 47876184}
@@ -3460,26 +3477,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 731608293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mr Jean d\u2019arc \r\n\nMort en sauvant son employeur\r\nAime les chevaliers,
+    le jazz et les costumes 3 pi\xE8ces\r\nVraiment serviable \r\n"
 --- !u!222 &731608296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3665,7 +3687,9 @@ MonoBehaviour:
   showOther: {fileID: 529405306}
   choice: {fileID: 1641577461}
   file: {fileID: 2117450017}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 1b19a31d59892614285ede984439b30d, type: 3}
 --- !u!114 &839892941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4022,7 +4046,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 716375635}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4036,7 +4060,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922810412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -4050,7 +4074,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 3b566051506c83845a350adc327bc3e2, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4229,26 +4253,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 979586168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 10
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mme. \xC9laine Musque \r\n\nEst morte \xE9cras\xE9e par son poney en diamant.\r\nEst
+    devenue milliardaire par le biais de moyens plus ou moins l\xE9gaux\r\nSon passe-temps
+    favori est de jeter l\u2019argent avec un pistolet sp\xE9cialement cr\xE9\xE9
+    pour et/ou bruler des Lamborghini.\r\n"
 --- !u!222 &979586171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5170,26 +5201,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1263934052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Patron d'Infogrammes\n\nAime l'argent et d\xE9tester les enfants"
 --- !u!222 &1263934055
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5442,7 +5477,9 @@ MonoBehaviour:
   showOther: {fileID: 1578371373}
   choice: {fileID: 1641577461}
   file: {fileID: 1548416193}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 9897d10ca1313ab499e5b0cf8b478de5, type: 3}
 --- !u!114 &1329494911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5530,26 +5567,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1405889347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 10
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mr. Abdullah AbdulRahim\r\n\nUn chirurgien qui a laiss\xE9 son patient
+    mourir volontairement et a ensuite fui le Japon\r\nM\xE9ga fan de l\u2019\xE9poque
+    Sengoku\r\nAime cosplay comme beaucoup de personnes d\u2019anime\r\nSait comment
+    utiliser une katana\r\n"
 --- !u!222 &1405889350
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5766,26 +5810,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1470633144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mme Alice Mimi\r\n\r\nEst morte d\u2019une maladie g\xE9n\xE9tique.\r\nSuper
+    mimi comme son nom.\r\nAime les fleurs, ses amis et ses tartes \xE0 la fraise
+    \r"
 --- !u!222 &1470633147
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5969,26 +6019,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 1548416193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 10
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "M. Berek SHeperd\nMort d\u2019une overdose caus\xE9e par l\u2019absorption
+    \r\nD\u2019Amph\xE9tamines.\r De Cathinone Khat.\r De M\xE9thylph\xE9nidate.\r
+    De Coca\xEFne.\r De Bupropion.\r De Di\xE9thylpropion.\r De Fluox\xE9tine.\r
+    De Fluvoxamine.  (en m\xEAme temps)\r\n\nAime le stress, sauver des vies, et
+    le r\xE9glisse.\r\nNeurochirurgien de g\xE9nie (\xE9tait).\r\n"
 --- !u!222 &1548416196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6043,26 +6101,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1575174555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mr John Random \r\n\r\nMort percut\xE9 par une voiture\r\nA une sublime
+    croix gamm\xE9e sur le torse.\r\nAime la paix, les bons gros joins et le hachis
+    parmentier.\r\n"
 --- !u!222 &1575174558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6352,6 +6416,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598529222}
   m_CullTransparentMesh: 0
+--- !u!1 &1604381784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604381785}
+  - component: {fileID: 1604381787}
+  - component: {fileID: 1604381786}
+  m_Layer: 5
+  m_Name: Holo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1604381785
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604381784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 716375635}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 244, y: 141}
+  m_SizeDelta: {x: 140.42168, y: 149.16476}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1604381786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604381784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3ee16a07e7e31a24198f1c6ee1579bc7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1604381787
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604381784}
+  m_CullTransparentMesh: 0
 --- !u!1 &1612627022
 GameObject:
   m_ObjectHideFlags: 0
@@ -6480,16 +6618,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660404475}
-  m_LocalRotation: {x: -0, y: -0, z: 0.032604426, w: 0.9994684}
+  m_LocalRotation: {x: -0, y: -0, z: -0.029639227, w: -0.99956065}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 38350621}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.7370002}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.397}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -291.86, y: -60.22}
+  m_AnchoredPosition: {x: -286.4, y: -63.9}
   m_SizeDelta: {x: 198.28827, y: 107.236694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1660404477
@@ -6501,26 +6639,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1660404475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "M. Baraka Fryte :\nCannibale qui a mang\xE9 10 personnes\r\nAime la musique
+    pop, les films gores et les jeux de soci\xE9t\xE9\r\nR\xE9put\xE9 pour \xEAtre
+    tr\xE8s gentil.\r"
 --- !u!222 &1660404478
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6727,26 +6871,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1688193486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mr. Jordan Ramses\r\n\nA empoisonn\xE9 tout le monde pr\xE9sent lors d\u2019un
+    d\xEEner de charit\xE9\r\nN\u2019accepte que plus que la perfection\r\n"
 --- !u!222 &1688193489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6895,26 +7044,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1844592983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mme Cate Bane\r\n\r\nEst morte d\u2019une chute mortelle\r\nA bris\xE9
+    le dos de son mari \r\nAime les sports de combats et la cuisine mol\xE9culaire\r\n"
 --- !u!222 &1844592986
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6999,7 +7153,9 @@ MonoBehaviour:
   showOther: {fileID: 641237711}
   choice: {fileID: 1641577461}
   file: {fileID: 674051637}
+  sprite: {fileID: 0}
   current: 0
+  character: {fileID: 0}
 --- !u!114 &1850202076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7561,7 +7717,9 @@ MonoBehaviour:
   showOther: {fileID: 695118175}
   choice: {fileID: 1641577461}
   file: {fileID: 1470633144}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: abdf0844d9d5ec34187d3eac8528e0aa, type: 3}
 --- !u!114 &1975019931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7868,7 +8026,9 @@ MonoBehaviour:
   showOther: {fileID: 484916758}
   choice: {fileID: 1641577461}
   file: {fileID: 1575174555}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 191f5de58a3e6ba469a01823fac63d25, type: 3}
 --- !u!114 &2034643119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7971,7 +8131,9 @@ MonoBehaviour:
   showOther: {fileID: 2101355890}
   choice: {fileID: 1641577461}
   file: {fileID: 1263934052}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: 5760cd81a4b43024e8cc373ca7b1220e, type: 3}
 --- !u!114 &2040671722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8194,7 +8356,9 @@ MonoBehaviour:
   showOther: {fileID: 1225382508}
   choice: {fileID: 1641577461}
   file: {fileID: 1844592983}
+  sprite: {fileID: 922810414}
   current: 0
+  character: {fileID: 21300000, guid: a9a2a61ff34a0eb469f0e560aabf6f2b, type: 3}
 --- !u!114 &2061859494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8312,7 +8476,9 @@ MonoBehaviour:
   showOther: {fileID: 1303174406}
   choice: {fileID: 1641577461}
   file: {fileID: 1682260897}
+  sprite: {fileID: 0}
   current: 0
+  character: {fileID: 0}
 --- !u!114 &2077757967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8634,26 +8800,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117450017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12048284, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ad82edba7a457df43948bb34cca45c75, type: 3}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mr Tod Brundy \r\n\nMort paisiblement d\u2019une rupture d\u2019an\xE9vrisme
+    durant son sommeil.\r\nA occasionnellement tu\xE9 150 personnes de sang-froid.\r\nAime
+    jouer \xE0 League of Legends.\r\n"
 --- !u!222 &2117450020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8781,6 +8953,9 @@ MonoBehaviour:
   showOther: {fileID: 342054554}
   current: 0
   intro: {fileID: 932913407}
+  holo: {fileID: 21300000, guid: 3ee16a07e7e31a24198f1c6ee1579bc7, type: 3}
+  boss: {fileID: 1604381786}
+  character: {fileID: 922810414}
 --- !u!1 &2143850323
 GameObject:
   m_ObjectHideFlags: 0

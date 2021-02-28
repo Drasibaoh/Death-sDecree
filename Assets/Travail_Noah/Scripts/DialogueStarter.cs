@@ -11,11 +11,15 @@ public class DialogueStarter : MonoBehaviour
     public Text showOther;
     public int current = 0;
     public GameObject intro;
+    public Sprite holo;
+    public Image boss;
+    public Image character;
     // Start is called before the first frame update
     void Start()
     {
         show = this.GetComponent<Text>();
         showOther.text = dialogues[current];
+        boss.sprite = holo;
     }
 
     // Update is called once per frame
@@ -30,6 +34,8 @@ public class DialogueStarter : MonoBehaviour
         if (current > dialogues.Count - 1)
         {
             intro.SetActive(false);
+            boss.gameObject.SetActive(false);
+            character.enabled = true;
             GameManager._instance.FirstJudgement();
         }
         else 

@@ -11,19 +11,23 @@ public class Dialogue : MonoBehaviour
     public Text showOther;
     public GameObject choice;
     public GameObject file;
+    public Image sprite;
     public int current=0;
+    public Sprite character;
     // Start is called before the first frame update
     void Start()
     {
         choice = GameManager._instance.choice;
         showPlayer = this.GetComponent<Text>();
         showPlayer.text = dialogues[current];
+        sprite.sprite = character;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && current != 4)
+        if (Input.GetKeyDown(KeyCode.Return) && current != 3)
         {
             NextLine();
         }
@@ -36,7 +40,7 @@ public class Dialogue : MonoBehaviour
         {
             current++;
             Debug.Log(current);
-            if (current != 4)
+            if (current != 2)
             {
                 Debug.Log("e");
                 choice.SetActive(false);
@@ -55,9 +59,9 @@ public class Dialogue : MonoBehaviour
                 {
                     showOther.text = dialogues[current];
                 }
-                else if (current == 2)
+                
+            }else if (current == 2)
                     file.SetActive(true);
-            }
 
             else
             {
