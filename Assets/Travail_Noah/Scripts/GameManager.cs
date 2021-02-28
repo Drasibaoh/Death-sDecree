@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool firsTime=true;
     public bool end = false;
     public GameObject choice;
+    public GameObject outro;
     private void Awake()
     {
         if (_instance == null)
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Hell");
         choice.SetActive(false);
-        if (canvas.Count - 1 > 0 && firsTime)
+        if (canvas.Count  > 0 && firsTime)
         {
             //actualCanvas.SetActive(false);
             int rand = Random.Range(0, canvas.Count - 1);
@@ -80,7 +81,7 @@ public class GameManager : MonoBehaviour
             canvas.RemoveAt(rand);
             firsTime = false;
         }
-        else if (canvas.Count - 1 > 0 && !firsTime)
+        else if (canvas.Count  > 0 && !firsTime)
         {
             actualCanvas.SetActive(false);
             int rand = Random.Range(0, canvas.Count - 1);
@@ -94,6 +95,7 @@ public class GameManager : MonoBehaviour
         {
             actualCanvas.SetActive(false);
             end = true;
+            outro.SetActive(true);
             Debug.Log(end);
         }
 

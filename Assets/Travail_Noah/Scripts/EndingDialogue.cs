@@ -33,6 +33,7 @@ public class EndingDialogue : MonoBehaviour
     {
         if (GameManager._instance.end)
         {
+            Debug.Log("e");
             current++;
             if (current > dialoguesP1.Count - 1)
             {
@@ -46,7 +47,7 @@ public class EndingDialogue : MonoBehaviour
                     boss.enabled = false;
                     Debug.Log("e");
                     fade.FadeToLevel();
-                    us.sprite = playerS;
+                    Invoke("ChangeSprite",2f);
                 }
                 if (isPlayer[current])
                 {
@@ -58,5 +59,9 @@ public class EndingDialogue : MonoBehaviour
                 }
             }
         }
+    }
+    public void ChangeSprite()
+    {
+        us.sprite = playerS;
     }
 }
