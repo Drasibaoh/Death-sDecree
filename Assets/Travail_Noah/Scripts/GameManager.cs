@@ -92,6 +92,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            actualCanvas.SetActive(false);
             end = true;
             Debug.Log(end);
         }
