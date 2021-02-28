@@ -1,20 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class LevelChanger : MonoBehaviour
 {
-    public static LevelChanger _instance;
+    
+
     public Animator animator;
-    private int levelToLoad;
-    private void Awake()
-    {
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-    }
+    public GameObject background;
+    public Sprite endBackground;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +17,13 @@ public class LevelChanger : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void FadeToLevel(int levelIndex)
+    public void FadeToLevel()
     {
-        levelToLoad = levelIndex;
+        Debug.Log("ee");
         animator.SetTrigger("FadeOut");
     }
     public void OnFadeCompleted()
     {
-        SceneManager.LoadScene(levelToLoad);
+        background.GetComponent<Image>().sprite = endBackground;
     }
 }
