@@ -60,11 +60,10 @@ public class Dialogue : MonoBehaviour
                     showOther.text = dialogues[current];
                 }
                 
-            }else if (current == 2)
-                    file.SetActive(true);
-
+            }
             else
-            {
+            { 
+                file.SetActive(true);
                 Debug.Log("ee");
                 choice.SetActive(true);
 
