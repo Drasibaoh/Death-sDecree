@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: 9d1255093c5c2d04787dc50b2bab5000
+  - enabled: 1
+    path: Assets/Scenes/Travail_Noah.unity
+    guid: b21234c92eeb6b748ba7e5596f5e293f
   m_configObjects: {}
